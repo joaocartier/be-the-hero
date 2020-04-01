@@ -50,3 +50,40 @@
 .new-incident-container .content form .input-group input + input {
   margin-left: 8px;
 }
+
+@media screen and (max-width: 500px) {
+  img {
+    width: 200px;
+  }
+  .new-incident-container {
+    width: 100%;
+    max-width: 1120px;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .new-incident-container .content {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    padding: 30px 20px;
+    background: #f0f0f5;
+    box-shadow: none;
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .new-incident-container .content section {
+    width: 100%;
+    max-width: 380px;
+  }
+
+  .new-incident-container .content section h1 {
+    margin: 44px 0 32px;
+  }
+}

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useHistory } from "react-router-dom";
-import { FiPower, FiTrash2 } from "react-icons/fi";
+import { FiPower, FiTrash2, FiPlus } from "react-icons/fi";
 
 import api from "../../services/api";
 
@@ -55,6 +55,9 @@ export default function Profile() {
 
   return (
     <div className="profile-container">
+      <Link className="fab-add" to="/incident/new">
+        <FiPlus size={25} />
+      </Link>
       <header>
         <img src={logoImg} alt="Be The Hero" />
         <span>Bem vinda, {ongName}</span>

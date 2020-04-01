@@ -3,9 +3,13 @@ const connection = require("../database/connection");
 
 module.exports = {
   async index(req, res) {
-    const ongs = await connection("ongs").select("*");
-
-    return res.json(ongs);
+    try {
+      const ongs = await connection("ongs").select("*");
+      return res.json(ongs);
+    } catch (error) {
+      console.log(error);
+      return res.json({ error });
+    }
   },
   async create(req, res) {
     const { name, email, whatsapp, city, uf } = req.body;
