@@ -1,6 +1,6 @@
 # be-the-hero
 
-Web app to promove donators and NGO's contact.
+Web app to donors and NGOs get in touch
 
 ### Tech Stack
 + Node.js - Backend
